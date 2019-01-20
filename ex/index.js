@@ -1,16 +1,7 @@
-//clonando objetos usando o operador Spread 
-const produto ={
-    nome:'caneta Bic Preta',
-    preco:1.90,
-    desconto:0.5
-}
+import 'react'//ele funciona direto o import por causa que adicionamos o Babel
 
-function clone(objeto){
-    return { ...objeto }
-}
+export default props => (
+    <h1>Olá</h1>
+)
 
-
-const novoProduto = clone(produto)
-novoProduto.nome ='Caneca Bic Azul'
-
-console.log(produto,novoProduto)
+console.log('funcionou!!!')
