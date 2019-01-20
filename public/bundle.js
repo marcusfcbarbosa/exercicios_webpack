@@ -44,19 +44,11 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	class Pessoa {
-	    constructor(nome){
-	        this.nome = nome
-	    }
+	'use strict';
 
-	    toString(){
-	        return `Pessoa: ${this.nome}`
-	    }
-	}
+	var pessoa = new Pessoa('Marcus');
 
-	const pessoa = new Pessoa('Marcus')
-
-	console.log(pessoa.toString())
+	console.log(pessoa.toString());
 
 /***/ }
 /******/ ]);
