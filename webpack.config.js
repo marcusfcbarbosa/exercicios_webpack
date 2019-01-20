@@ -4,7 +4,6 @@ const webpack = require('webpack')
 module.exports ={
     entry: './ex/index.js',//Ponto de entrada
     output:{
-
         path:__dirname + '/public',//Onde sera gerada a saida do arquivo javascript ( __dirname = diretorio atual )
         filename:'./bundle.js'//posso colocar o nome que quiser
     },
