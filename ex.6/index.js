@@ -1,4 +1,3 @@
-import './estilo.css'
 import 'react'//ele funciona direto o import por causa que adicionamos o Babel
 
 export default props => (
