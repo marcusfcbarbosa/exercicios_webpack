@@ -42,16 +42,21 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(1)// o require é a forma de referencia a bibliotecas externas
-
-
-/***/ },
-/* 1 */
 /***/ function(module, exports) {
 
-	console.log('Sou carregado?')
+	class Pessoa {
+	    constructor(nome){
+	        this.nome = nome
+	    }
+
+	    toString(){
+	        return `Pessoa: ${this.nome}`
+	    }
+	}
+
+	const pessoa = new Pessoa('Marcus')
+
+	console.log(pessoa.toString())
 
 /***/ }
 /******/ ]);
