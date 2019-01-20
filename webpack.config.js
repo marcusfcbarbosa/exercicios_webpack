@@ -17,7 +17,8 @@ module.exports ={
             loader:'babel-loader',
             exclude: /node_modules/, //definindo que ele não precisa ler o conteudo que esta no diretorio node_modules, somente os outros da aplicação
             query:{//o que ele vai interpretar 
-                presets:['es2015']
+                presets:['es2015'],
+                plugins: ["transform-object-rest-spread"] //esse plugin é usado para obter o operador Spread ( ... ) usado para clonar objetos
             }
         }]
     }

@@ -46,9 +46,23 @@
 
 	'use strict';
 
-	var pessoa = new Pessoa('Marcus');
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	console.log(pessoa.toString());
+	//clonando objetos usando o operador Spread 
+	var produto = {
+	    nome: 'caneta Bic Preta',
+	    preco: 1.90,
+	    desconto: 0.5
+	};
+
+	function clone(objeto) {
+	    return _extends({}, objeto);
+	}
+
+	var novoProduto = clone(produto);
+	novoProduto.nome = 'Caneca Bic Azul';
+
+	console.log(produto, novoProduto);
 
 /***/ }
 /******/ ]);
