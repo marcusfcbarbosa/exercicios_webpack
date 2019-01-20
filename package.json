@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/marcusfcbarbosa/exercicios_webpack/issues"
   },
-  "homepage": "https://github.com/marcusfcbarbosa/exercicios_webpack#readme"
+  "homepage": "https://github.com/marcusfcbarbosa/exercicios_webpack#readme",
+  "devDependencies": {
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
 }
