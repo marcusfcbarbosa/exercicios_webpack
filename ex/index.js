@@ -1,3 +1,1 @@
-const logger = require('./logger')// uso ./ para caminho relativo
-
-logger.info('Usando o Padrão CommonJS!!')
+require('./duvidaCruel')// o require é a forma de referencia a bibliotecas externas
